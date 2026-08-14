@@ -1,10 +1,10 @@
 {
   "build": {
     "builder": "NIXPACKS",
-    "buildCommand": "npm install"
+    "buildCommand": "npm install && npm run build"
   },
   "deploy": {
-    "startCommand": "npm start",
+    "startCommand": "npm run dev",
     "startPort": 3000
   },
   "env": {
@@ -17,5 +17,5 @@
       "sync": false
     },
     "PORT": "3000"
-    }
+  }
 }
