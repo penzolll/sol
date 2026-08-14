@@ -1,0 +1,21 @@
+{
+  "build": {
+    "builder": "NIXPACKS",
+    "buildCommand": "npm install"
+  },
+  "deploy": {
+    "startCommand": "npm start",
+    "startPort": 3000
+  },
+  "env": {
+    "GMGN_API_KEY": {
+      "generateValue": true,
+      "sync": false
+    },
+    "GMGN_PRIVATE_KEY": {
+      "generateValue": true,
+      "sync": false
+    },
+    "PORT": "3000"
+    }
+}
