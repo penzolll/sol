@@ -1,21 +1,11 @@
 {
+  "$schema": "https://railway.app/railway.schema.json",
   "build": {
     "builder": "NIXPACKS",
     "buildCommand": "npm install && npm run build"
   },
   "deploy": {
-    "startCommand": "npm run dev",
-    "startPort": 3000
-  },
-  "env": {
-    "GMGN_API_KEY": {
-      "generateValue": true,
-      "sync": false
-    },
-    "GMGN_PRIVATE_KEY": {
-      "generateValue": true,
-      "sync": false
-    },
-    "PORT": "3000"
+    "startCommand": "node server.js",
+    "restartPolicyType": "ON_FAILURE"
   }
 }
